@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>in.akshayit</groupId>
+  <artifactId>01SpringApp</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+<!--   <repositories>
+<repository>
+<id>nexus</id>
+<url>http://43.205.146.33:8081/repository/ashokit-remote-repository</url>
+</repository>
+</repositories> -->
+
+  <dependencies>
+  	<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>5.3.9</version>
+   <!--  Exclusion is used to remove un-wanted child dependencies from build path -->
+    <exclusions>
+    	<exclusion>
+    		<groupId>org.springframework</groupId>
+    		 <artifactId>spring-aop</artifactId>
+   		 </exclusion>
+    </exclusions>
+</dependency>
+
+<!--   	<dependency>
+<groupId>in.ashokit</groupId> 
+<artifactId>pwd-utils</artifactId>
+<version>1.0</version>
+</dependency> -->
+
+  </dependencies>
+</project>
